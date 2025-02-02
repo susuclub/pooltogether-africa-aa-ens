@@ -123,8 +123,10 @@ export const usePoolDeposit = () => {
             }
             
         } catch (error) {
-            console.log(error)
+            console.log("error in approve hook by ai agent", error)
             setLoading(false)
+            return error
+
         }
         
         

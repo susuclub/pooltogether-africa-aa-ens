@@ -106,7 +106,11 @@ export function Profile ({ pooler, smartAccountAddress, getBackPooler } : Profil
             setIsValidEmail(result.success);
             if (!pooler && email && data.susuTag && result.success == true) {
                 
-                await poolApproveHook()
+                const approve = await poolApproveHook()
+                console.log("error in approve hook by ai agent", approve)
+                //debug w/israel
+                console.log(approve)
+
                 await postPooler(
                     smartAccountAddress!,
                     email!,

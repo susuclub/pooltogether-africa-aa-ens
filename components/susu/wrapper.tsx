@@ -2,9 +2,9 @@
 
 import { usePrivy } from "@privy-io/react-auth";
 import { Authorized } from "./authorized";
-import { Unauthorized } from "./unathorized";
+import { Unauthorized } from "./unauthorized";
 
-export function SusuComponent() {
+export function Wrapper() {
     
     const { ready, authenticated } = usePrivy()
 

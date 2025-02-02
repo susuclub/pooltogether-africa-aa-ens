@@ -1,5 +1,4 @@
 
-import { Wrapper } from "@/components/susu/wrapper";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,10 +6,9 @@ export const metadata: Metadata = {
     description: "get a susu box, save & win prizes",
 };
 
-export default async function Susu() {
+export default async function Circles() {
     return (
         <>
-            <Wrapper/>
         </>
     )
 }
